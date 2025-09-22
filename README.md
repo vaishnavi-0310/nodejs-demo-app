@@ -27,33 +27,33 @@ Automate code deployment using GitHub Actions.
 
 
 ## Commands for Setup, Docker, and GitHub Push
-1. Create project folder
+1. Create project folder:
    ```bash
    mkdir nodejs-demo-app
    cd nodejs-demo-app
 
-2. Initialize Git and npm
+2. Initialize Git and npm:
    ```bash
    git init
    npm init -y
 
-3. Install Dependencies
+3. Install Dependencies:
    ```bash
    npm install express
    npm install --save-dev jest
 
-4. Run locally
+4. Run locally:
    ```bash
    npm ci
    npm test
    node index.js
 
-5. Docker Build and Run Locally
+5. Docker Build and Run Locally:
    ```bash
    docker build -t nodejs-demo-app:local .
    docker run -p 3000:3000 --rm nodejs-demo-app:local
 
-6. Push to GitHub (after creating remote repository)
+6. Push to GitHub (after creating remote repository):
    ```bash
    git add .
    git commit -m "Initial commit"
