@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 
 env:
-  IMAGE: ${{ secrets.DOCKERHUB_USERNAME }}/nodejs-demo-app
+  IMAGE: ${{ secrets.DOCKERHUB_USERNAME }}vc03/nodejs-demo-app
 
 jobs:
   test:
